@@ -1,0 +1,9 @@
+POST http://localhost:9393/persons/
+Content-Type: application/json
+
+{
+    "firstName": "Julia",
+    "lastName": "Bandurska",
+    "email": "email.com",
+    "companyName": "UG"
+}
