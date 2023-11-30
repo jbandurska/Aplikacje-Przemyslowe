@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>App</title>
+  </head>
+  <body>
+    <div>
+      <h1>Dane użytkownika</h1>
+      <p th:text="${user.name}"></p>
+      <p th:text="${user.id}">Id</p>
+      <p th:text="${user.age}">Age</p>
+      <p th:text="${user.userType}">UserType</p>
+      <p th:text="${#dates.format(user.registrationDate, 'dd-MM-yyyy HH:mm')}">
+        RegistrationDate
+      </p>
+    </div>
+    <div>
+      <p>
+        Czy artur na stronie:
+        <span th:text="${user.name == 'Artur' ? 'tak' : 'nie'}"></span>
+      </p>
+    </div>
+  </body>
+</html>
